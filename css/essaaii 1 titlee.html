@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+    <link rel="stylesheet" href="essaai 1 .css"/>
+    <TITLE> The Wonders Of Space </TITLE>
+    </HEAD>
+    <BODY>
+<div class="container">
+	<div class="outer">
+		<div class="details">
+            <header>
+
+                <div class="main"> 
+                  
+                    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+                    <h2 > The Wonders Of Space </h2>
+<div class="left">
+<div class="space">
+<div class="planet mine"><h1>   </h1></div>
+  </div></div>
+<div class="left">
+<div class="space">
+<div class="planet yours"><h1><br></h1></div>
+  </div></div>
+                    <!-- <div class="title"> 
+                        <h1> The Wonders Of Space </h1>
+                   </div> -->
+                   
+                   <div class="button">
+                       <a href ="https://www.nasa.gov/content/nasa-history-overview" title="Site ministaire du tourisme".html" class="btn" target="_blank">  More Info About nasa's history </a>
+                   </div>
+   
+                
+            </header>
+            
+         <div id="mySidenav" class="sidenav">
+                <a href="Space P1.html" id="Home">Home</a>
+                <a href="Space Game.html" id="SpaceGame">Space Game</a>
+                <a href="space trip.html" id="SpaceTrip">Space Trip</a>
+                <a href="schedule.html" id="AstroCalendar">Astro Calendar</a>
+                <a href="planets.html" id="PlanetsWiki">Planets Wiki</a>   
+                <a href="quiz.html" id="Quiz">Quiz</a>              
+           
+        </div>		</div>
+
+    </div>
+</div>
+<button class="collapsible">Regarder le video</button>
+<div class="content">
+    <br></br>
+    <button id="close" > X </button>
+    <video width="900" height="440" controls><source src="./videos/nasa video.mp4 " type="video/mp4">
+     </video>
+     
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var closebtn = document.getElementById("close");
+closebtn.addEventListener("click", function() {
+    this.parentElement.style.maxHeight = null;
+  });
+
+</script> 
+
+<button onclick="document.location='Space P1 - Copie.html'" style="position: absolute;top: 10%;right: 5%;color: white;background-color:black;" > French Mode</button>
+
+</BODY>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</HTML>

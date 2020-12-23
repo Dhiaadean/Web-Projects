@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+    <link rel="stylesheet" href="1.css"/>
+    <TITLE> The Wonders Of Space </TITLE>
+    <link rel="icon" href="./images/TWOS.png" type="image/.jpg">
+    </HEAD>
+    <BODY>
+<div class="container">
+	<div class="outer">
+		<div class="details">
+            <header>
+
+                <div class="main"> 
+                  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+                  <h2 > The Wonders <br> Of Space </h2>
+                  <div class="left">
+                      <div class="space">
+                            <div class="planet mine"><h1>   </h1></div>
+                      </div>
+                  </div>
+                  <div class="left">
+                       <div class="space">
+                             <div class="planet yours"><h1><br></h1></div>
+                        </div>
+                  </div>
+
+                   <div class="button">
+                       <a href ="https://www.nasa.gov/content/nasa-history-overview" title="nasa's history" class="btn" target="_blank" style="font-size: 20px;"> About nasa's history </a>
+                   </div>
+   
+                
+            </header>
+            
+         <div id="mySidenav" class="sidenav">
+                <a href="Space P1.html" id="Home">Home</a>
+                <a href="Space Game.html" id="SpaceGame">Space Game</a>
+                <a href="space trip.html" id="SpaceTrip">Space Trip</a>
+                <a href="schedule.html" id="AstroCalendar">Astro Calendar</a>
+                <a href="planets.html" id="PlanetsWiki">Planets Wiki</a>   
+                <a href="quiz.html" id="Quiz">Quiz</a>              
+           
+        </div>		</div>
+
+    </div>
+</div>
+<button class="collapsible" style="font-size: 20px;">watch the video</button>
+<div class="content">
+    <br></br>
+    <button id="close" > X </button>
+    <video width="900" height="440" controls><source src="./videos/nasa video.mp4 " type="video/mp4">
+     </video>
+     
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var closebtn = document.getElementById("close");
+closebtn.addEventListener("click", function() {
+    this.parentElement.style.maxHeight = null;
+  });
+
+</script> 
+
+
+</BODY>
+</BODY>
+</HTML>

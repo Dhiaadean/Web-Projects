@@ -1,0 +1,80 @@
+<HTML>
+    <HEAD>
+    <link rel="stylesheet" href="1.css"/>
+    <TITLE> Les Merveille d'espace </TITLE>
+    </HEAD>
+    <BODY>
+<div class="container">
+	<div class="outer">
+		<div class="details">
+            <header>
+
+                <div class="main"> 
+                  
+                    <!-- <ul>
+                       <li class="active"> <a href="#"> Acceuil </a></li>
+                       <li> <a href="quiz.html"> QUIZ </a></li>
+                       <li> <a href="form.html"> Réserver </a></li>
+                        <li> <a href="contact.html"> Contact </a></li>
+                       <li> <a href="pg.html"> Hébergements</a></li>
+                      
+                       
+                    </ul> -->
+        
+                    <div class="title"> 
+                        <h1> Les merveille d'espace </h1>
+                   </div>
+                   <div class="button">
+                       <a href ="https://www.nasa.gov/content/nasa-history-overview" title="Site ministaire du tourisme".html" class="btn" target="_blank">  Plus De Nasa  </a>
+                   </div>
+   
+                
+            </header>
+            
+         <div id="mySidenav" class="sidenav">
+                <a href="#" id="Acceuil">Acceuil</a>
+                <a href="#" id="Nasa">Nasa</a>
+                <a href="#" id="SpaceTrip">Une excursion en space</a>
+                <a href="#" id="AstroCalendar">calendrier d'astro</a>
+                <a href="planets.html" id="PlanetsWiki">wiki des planet</a>   
+                <a href="quiz.html" id="Quiz">Quiz</a>              
+           
+        </div>		</div>
+
+    </div>
+</div>
+<button class="collapsible">Regarder le video</button>
+<div class="content">
+    <br></br>
+    <button id="close" > X </button>
+    <video width="900" height="440" controls><source src="nasa video.mp4" type="video/mp4">
+     </video>
+     
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+var closebtn = document.getElementById("close");
+closebtn.addEventListener("click", function() {
+    this.parentElement.style.maxHeight = null;
+  });
+
+</script> 
+
+</BODY>
+</BODY>
+</HTML>

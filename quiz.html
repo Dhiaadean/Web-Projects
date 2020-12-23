@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>QUIZ</title>
+    <link rel="stylesheet"  href="quiz.css"/>
+    <link rel="icon" href="./images/quiz.png" type="image/.jpg">
+
+</head>
+<body>
+    <header>
+
+        <div class="main"> 
+          
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="Space P1.html" id="Home">Home</a>
+                <a href="Space Game.html" id="SpaceGame">Space Game</a>
+                <a href="space trip.html" id="SpaceTrip">Space Trip</a>
+                <a href="schedule.html" id="AstroCalendar">Astro Calendar</a>
+                <a href="planets.html" id="PlanetsWiki">Planets Wiki</a>   
+                <a href="quiz.html" id="Quiz">Quiz</a>              
+           
+        </div>
+        </div>
+        
+    
+    </header>
+
+    
+<div class="content">   
+    
+    <br>	
+</br>
+<br>	
+</br>
+<br>	
+</br>
+<br>	
+</br>
+
+    <button onclick="setTimeout(myFunction, 20000) ; timerquiz()"  style="color: black;background-color:white;padding:1%;border-radius: 4px;width: 200px;font-size: 25px;"><img src="./images/timer.png" width="20px" > Timer</button>
+    <div>You have 20 seconds to answer the quiz </div>
+
+
+    <div class="Timer" >
+    <div style="color: blue;text-align: center;font-size: larger;position: relative; ;top: 20%;"> <span id="time" > <strong>  00:20</span> seconds </strong> <img src="./images/tenor.gif" width="80px" > </div>
+
+    </div>
+  
+
+
+
+
+<center><h1 style="color: antiquewhite;">Quiz Questions</h1></center>
+
+<div class="formss">
+
+<p>
+
+<form name="quiz" style="position: relative;left: -5%;">
+
+<p>
+
+<b>Question 1.
+
+<br>The day on which the Sun’s direct rays cross the celestial equator is called:<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="the equinox">the equinox<br>
+
+<input type="radio" name="q1" value="the ecliptic">the ecliptic<br>
+
+<input type="radio" name="q1" value="the solstice">the solstice<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 2.
+
+<br>Who invented the telescope?.<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="Galileo">Galileo<br>
+
+<input type="radio" name="q2" value="Hans Lippershey">Hans Lippershey<br>
+
+<input type="radio" name="q2" value="Hypatia">Hypatia<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 3.
+
+<br>Which of these objects is the farthest from the Sun?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="90377 Sedna">90377 Sedna<br>
+
+<input type="radio" name="q3" value="Neptune">Neptune<br>
+
+<input type="radio" name="q3" value="Kuiper belt">Kuiper belt<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 4.
+
+<br>What term describes the alignment of three celestial bodies?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="sizzle">sizzle<br>
+
+<input type="radio" name="q4" value="suzerainty">suzerainty<br>
+
+<input type="radio" name="q4" value="syzygy">syzygy<br>
+
+</blockquote>
+
+<p><b>
+
+<hr>
+
+Question 5.
+
+<br>What is the smallest planet in the solar system by mass?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="Earth">Earth<br>
+
+<input type="radio" name="q5" value="Mercury">Mercury<br>
+
+<input type="radio" name="q5" value="Jupiter">Jupiter<br>
+
+</blockquote>
+
+<p><b>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+     <img src="./images/giphy.gif" width="70" height="90"> <p>Answer All of the questions Please</p>
+  </div>
+
+</div>
+
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input id="resetting" type="reset" value="Clear" onclick="displays()" ><p>
+
+Number of score out of 5 = <input type= text size 5 name= "mark"> <br>
+
+Score in percentage = <input type=text size=5 name="percentage"><br>
+
+
+</form>
+
+<p>
+
+
+<p id="correctAnswers0" ></p>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<script>
+
+var numQues = 5;
+
+var numChoi = 3;
+
+var answers = new Array(5);
+
+answers[0] = "the equinox";
+
+answers[1] = "Hans Lippershey";
+
+answers[2] = "90377 Sedna";
+
+answers[3] = "syzygy";
+
+answers[4] = "Mercury";
+
+
+
+function getScore(form) {
+
+         var score = 0;
+
+         var currElt;
+
+         var currSelection;
+
+         for (i=0; i<numQues; i++) {
+
+             currElt = i*numChoi;
+
+             answered=false;
+
+             for (j=0; j<numChoi; j++) {
+
+                  currSelection = form.elements[currElt + j];
+
+                  if (currSelection.checked) {
+
+                        answered=true;
+
+                        if (currSelection.value == answers[i]) {
+
+                              score++;
+
+                              break;
+
+                        }
+
+                   }
+
+              }
+
+         if (answered ===false){modal.style.display = "block"; ;return false;}
+
+       
+        document.getElementById("correctAnswers0").innerHTML="correct answer for q1 :<br> "+answers[0]+"<br> correct answer for q2: <br>"+answers[1]+"<br> correct answer for q3:<br> "+answers[2]+"<br> correct answer for q4:<br> "+answers[3]+"<br> correct answer for q5: <br>"+answers[4];
+        x=document.getElementById('correctAnswers0');
+        x.style.display="block";
+        }
+
+         var scoreper = Math.round(score/numQues*100);
+
+         form.percentage.value = scoreper + "%";
+
+         form.mark.value=score;
+         
+        
+
+
+}
+function displays(){
+    x=document.getElementById('correctAnswers0');
+    x.style.display="None";
+}
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myFunction() {
+        alert('You ran out of time, try again please !');
+    }
+    function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+   function timerquiz() {
+    var twentysec = 18,
+        display = document.querySelector('#time');
+    startTimer(twentysec, display);
+};
+
+
+
+</script>
+
+</body>
+
+
+</html>

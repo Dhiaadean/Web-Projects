@@ -1,0 +1,1228 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Astro Calendar</title>
+        <link rel="stylesheet"  href="quiz.css"/>
+        <link rel="icon" href="./images/calendar.png" type="image/.jpg">
+
+    </head>
+    
+<body> 
+    <header>
+
+        <div class="main"> 
+          
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="Space P1.html" id="Home">Home</a>
+                <a href="Space Game.html" id="SpaceGame">Space Game</a>
+                <a href="space trip.html" id="SpaceTrip">Space Trip</a>
+                <a href="Astro Calendar.html" id="AstroCalendar">Astro Calendar</a>
+                <a href="planets.html" id="PlanetsWiki">Planets Wiki</a>   
+                <a href="quiz.html" id="Quiz">Quiz</a>              
+           
+        </div>
+        </div>
+        
+    
+    </header>
+
+    <center><h1 style="color: aqua;"> <br><br><br>ASTRO CALENDAR<br><br><br></h1> </center>
+    <table border="5" cellspacing="0" align="center" style="color: aliceblue;"> 
+        <!--<caption>Timetable</caption>-->
+        <tr> 
+            <td align="center" height="50" 
+                width="100"><br> 
+                <b>Day/Month</b></br> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>January </b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>February</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>March</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>April</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>May</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>June</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>July</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>August</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"><br> 
+                <b>September</b></br> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>October </b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>November</b> 
+            </td> 
+            <td align="center" height="50" 
+                width="100"> 
+                <b>December</b> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>1</b></td> 
+            <td rowspan="2" align="center" height="50"> <button id="btns" onclick="January2()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/SA.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+         
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>2</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="AugSat" onclick="saturn()" style="background:none;border:none;color: white;height: 100px;width: 90px;" ><img src="./images/saturn.png" width="50px" height="50px"></button></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>3</b> 
+            </td> 
+            <td align="center" height="50"></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>4</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="JulyMercury" onclick="Mercury4()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/mercury.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="novmoon" onclick="NewMoon15()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"> <br> <button id="novss" onclick="SSNOV()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/shooting-star (5).png" width="60px" height="60px"></button> </td>  
+            <td align="center" height="50"><button id="decnewmoon" onclick="NewMoon16()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> <br> <button id="decsolec" onclick="tosolec()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/tosolec.png" width="50px" height="50px"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>5</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="novura" onclick="uranus()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/uranus.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>6</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="MarMercury" onclick="Mercury2()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/mercury.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"><button id="may1" onclick="shooting()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/shooting.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="octmoon" onclick="NewMoon14()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>7</b></td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"><button id="septembermoon" onclick="NewMoon13()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"> </td> 
+                <td align="center" height="50"><button id="octss" onclick="SSOC()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/SSOC.png" width="60px" height="60px"></button> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>8</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="augmoon2" onclick="NewMoon12()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>9</b> 
+            </td> 
+            <td align="center" height="50"></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"></td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>10</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="junemoon" onclick="NewMoon9()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> <br> <button id="junesolec" onclick="solec()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/solec.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"><button id="Julymoon" onclick="NewMoon10()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>11</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="FebNewMoon1" onclick="NewMoon2()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="maymoon" onclick="NewMoon8()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>12</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="AprNewMoon1" onclick="NewMoon7()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/new-moon.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"> <button id="augustss" onclick="SHS()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/SHS.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>13</b></td> 
+                <td align="center" height="50"><button id="JanNewMoon" onclick="NewMoon()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button></td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"><button id="MarNewMoon1" onclick="NewMoon5()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td rowspan="2" align="center" height="50"><button id="decss" onclick="DECSS()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/shooting-star (8).png" width="50px" height="50px"></button> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>14</b> 
+            </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="septnept" onclick="neptune()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/neptune.png" width="50px" height="50px"></button> <br> <button id="septmercury" onclick="Mercury5()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/merc.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+                  </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>15</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>        
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>16</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       
+            <tr> 
+            <td align="center" height="50"> 
+                <b>17</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="maymercury" onclick="Mercury3()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/merc.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"> <button id="novss2" onclick="NOVSS2()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/shooting-star (6).png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+                </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>18</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="augjupiter" onclick="jupiter()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/jupiter.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>19</b></td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"><button id="novfm" onclick="FmSm7()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button> <br> <button id="novlunec" onclick="lunec()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/lunec.png" width="60px" height="60px"></button> </td>
+                <td align="center" height="50"><button id="decfm" onclick="FmSm8()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>20</b> 
+            </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  <button id="Mareq" onclick="Marcheq ()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/Mareq.png" width="60px" height="60px"></button> <br>  <button id="MarVenus" onclick="Venus1()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/venus.png" width="60px" height="60px"></button></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="septFmSm" onclick="FmSm5()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"><button id="octFmSm" onclick="FmSm6()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>21</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="Junesolst" onclick="sols()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/solstice.png" width="60px" height="60px"></button> <br>  <button id="JuneVenus" onclick="Venus2()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/venus.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"><button id="octss2" onclick="SSOCT()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/SSOCT.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"><button id="decsols" onclick="decsolss()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/decsol.png" width="60px" height="60px"></button> <br> <button id="decss2" onclick="DECSS2()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/shooting-star (9).png" width="50px" height="50px"></button> </td>           </td> 
+        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>22</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"><button id="AprLyrids" onclick="Lyrids()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/shooting-star.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> <button id="augmoon2" onclick="NewMoon12()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> <br>  <button id="augbluemoon" onclick="bluemoon()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/bluemoon.png" width="50px" height="50px"></button></td> 
+            <td align="center" height="50"><button id="septeq" onclick="septeq ()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/Mareq.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td>  
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>23</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>   
+            <td align="center" height="50"> </td>      </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>24</b> 
+            </td> 
+            <td align="center" height="50"><button id="JanMercury" onclick="Mercury()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/mercury.png" width="60px" height="60px"></button></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="JuneFmSm" onclick="FmSm3()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button></td> 
+            <td align="center" height="50"><button id="JulyFmSm" onclick="FmSm4()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>       </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>25</b></td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"></td> 
+                <td align="center" height="50"><button id="octmerc" onclick="Mercury6()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/mercury.png" width="50px" height="50px"></button> </td> 
+                <td align="center" height="50"> </td> 
+                <td align="center" height="50"> </td>
+                    </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>26</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="mayFmSm" onclick="FmSm2()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button><br> <button id="mayeclipse" onclick="eclipse()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/eclipse.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>27</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="FebNewMoon2" onclick="NewMoon3()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="AprFmSm" onclick="FmSm()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/full-moon.png" width="60px" height="60px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>28</b> 
+            </td> 
+            <td align="center" height="50"><button id="JanNewMoon2" onclick="NewMoon4()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button></td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="MarNewMoon2" onclick="NewMoon6()" style="background:none;border:none;color: white;height: 60px;width: 90px;" ><img src="./images/new-moon.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td rowspan="2" align="center" height="50"><button id="JulySS" onclick="JulySS()" style="background:none;border:none;color: white;height: 100px;width: 90px;" ><img src="./images/SS.png" width="50px" height="50px"></button> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>29</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"><button id="octvenus" onclick="Venus3()" style="background:none;border:none;color: white;height: 90px;width: 90px;" ><img src="./images/venus (1).png" width="60px" height="60px"></button>  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>        </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>30</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td>
+            <td align="center" height="50"> </td>         </tr> 
+        <tr> 
+            <td align="center" height="50"> 
+                <b>31</b> 
+            </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td> 
+            <td align="center" height="50">  </td> 
+            <td align="center" height="50"> </td>
+                </tr>
+    </table> 
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+var imgs = document.getElementById("images");
+var evnts=document.getElementById("events")
+
+function January2(){
+        document.getElementById("btns").value="Quadrantids Meteor Shower";
+          if (document.getElementById("btns").innerHTML !== "Quadrantids Meteor Shower"){
+           document.getElementById("btns").innerHTML = "Quadrantids Meteor Shower";
+          }
+          else{
+            document.getElementById("btns").innerHTML = '<img src="./images/SA.png" width="50px" height="50px">';
+
+          }
+          }
+function NewMoon(){
+        document.getElementById("JanNewMoon").value="Quadrantids Meteor Shower";
+          if (document.getElementById("JanNewMoon").innerHTML !== "New Moon"){
+           document.getElementById("JanNewMoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("JanNewMoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+          
+function Mercury(){
+        document.getElementById("JanMercury").value="Quadrantids Meteor Shower";
+          if (document.getElementById("JanMercury").innerHTML !== "Mercury at Greatest Eastern Elongation"){
+           document.getElementById("JanMercury").innerHTML = "Mercury at Greatest Eastern Elongation";
+          }
+          else{
+            document.getElementById("JanMercury").innerHTML = '<img src="./images/mercury.png" width="60px" height="60px">';
+
+          }
+          }
+function NewMoon2(){
+        document.getElementById("FebNewMoon1").value="Quadrantids Meteor Shower";
+          if (document.getElementById("FebNewMoon1").innerHTML !== "New Moon"){
+           document.getElementById("FebNewMoon1").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("FebNewMoon1").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon3(){
+        document.getElementById("FebNewMoon2").value="Quadrantids Meteor Shower";
+          if (document.getElementById("FebNewMoon2").innerHTML !== "New Moon"){
+           document.getElementById("FebNewMoon2").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("FebNewMoon2").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon4(){
+        document.getElementById("JanNewMoon2").value="Quadrantids Meteor Shower";
+          if (document.getElementById("JanNewMoon2").innerHTML !== "New Moon"){
+           document.getElementById("JanNewMoon2").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("JanNewMoon2").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+function Mercury2(){
+        document.getElementById("MarMercury").value="Mercury at Greatest Western Elongation	";
+          if (document.getElementById("MarMercury").innerHTML !== "Mercury at Greatest Western Elongation	"){
+           document.getElementById("MarMercury").innerHTML = "Mercury at Greatest Western Elongation	";
+          }
+          else{
+            document.getElementById("MarMercury").innerHTML = '<img src="./images/mercury.png" width="60px" height="60px">';
+
+          }
+          }
+function NewMoon5(){
+        document.getElementById("MarNewMoon1").value="Quadrantids Meteor Shower";
+          if (document.getElementById("MarNewMoon1").innerHTML !== "New Moon"){
+           document.getElementById("MarNewMoon1").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("MarNewMoon1").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function Venus1(){
+        document.getElementById("MarVenus").value="Quadrantids Meteor Shower";
+          if (document.getElementById("MarVenus").innerHTML !== "Venus at Greatest Western Elongation"){
+           document.getElementById("MarVenus").innerHTML = "Venus at Greatest Western Elongation";
+          }
+          else{
+            document.getElementById("MarVenus").innerHTML = '<img src="./images/venus.png" width="60px" height="60px">';
+
+          }
+          }
+function Marcheq(){
+        document.getElementById("Mareq").value="Quadrantids Meteor Shower";
+          if (document.getElementById("Mareq").innerHTML !== "March Equinox"){
+           document.getElementById("Mareq").innerHTML = "March Equinox";
+          }
+          else{
+            document.getElementById("Mareq").innerHTML = '<img src="./images/Mareq.png" width="50px" height="50px">';
+
+          }
+          }
+        
+function NewMoon6(){
+        document.getElementById("MarNewMoon2").value="Quadrantids Meteor Shower";
+          if (document.getElementById("MarNewMoon2").innerHTML !== "New Moon"){
+           document.getElementById("MarNewMoon2").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("MarNewMoon2").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon7(){
+        document.getElementById("AprNewMoon1").value="Quadrantids Meteor Shower";
+          if (document.getElementById("AprNewMoon1").innerHTML !== "New Moon"){
+           document.getElementById("AprNewMoon1").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("AprNewMoon1").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+function Lyrids(){
+        document.getElementById("AprLyrids").value="Quadrantids Meteor Shower";
+          if (document.getElementById("AprLyrids").innerHTML !== "Lyrids Meteor Shower"){
+           document.getElementById("AprLyrids").innerHTML = "Lyrids Meteor Shower";
+          }
+          else{
+            document.getElementById("AprLyrids").innerHTML = '<img src="./images/shooting-star.png" width="50px" height="50px">';
+
+          }
+          }
+function FmSm(){
+        document.getElementById("AprFmSm").value="Quadrantids Meteor Shower";
+          if (document.getElementById("AprFmSm").innerHTML !== "Full Moon, Supermoon"){
+           document.getElementById("AprFmSm").innerHTML = "Full Moon, Supermoon";
+          }
+          else{
+            document.getElementById("AprFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+ function shooting(){
+        document.getElementById("may1").value="Quadrantids Meteor Shower";
+          if (document.getElementById("may1").innerHTML !== "Eta Aquarids Meteor Shower	"){
+           document.getElementById("may1").innerHTML = "Eta Aquarids Meteor Shower	";
+          }
+          else{
+            document.getElementById("may1").innerHTML = '<img src="./images/shooting.png" width="60px" height="60px">';
+
+          }
+          }
+
+function NewMoon8(){
+        document.getElementById("maymoon").value="New Moon";
+          if (document.getElementById("maymoon").innerHTML !== "New Moon"){
+           document.getElementById("maymoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("maymoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+function Mercury3(){
+        document.getElementById("maymercury").value="Mercury at Greatest Eastern Elongation";
+          if (document.getElementById("maymercury").innerHTML !== "Mercury at Greatest Eastern Elongation	"){
+           document.getElementById("maymercury").innerHTML = "Mercury at Greatest Eastern Elongation	";
+          }
+          else{
+            document.getElementById("maymercury").innerHTML = '<img src="./images/merc.png" width="60px" height="60px">';
+
+          }
+          }
+       
+function FmSm2(){
+        document.getElementById("mayFmSm").value="Full Moon, Supermoon";
+          if (document.getElementById("mayFmSm").innerHTML !== "Full Moon, Supermoon"){
+           document.getElementById("mayFmSm").innerHTML = "Full Moon, Supermoon";
+          }
+          else{
+            document.getElementById("mayFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+    
+function eclipse(){
+        document.getElementById("mayeclipse").value="Total Lunar Eclipse";
+          if (document.getElementById("mayeclipse").innerHTML !== "Total Lunar Eclipse"){
+           document.getElementById("mayeclipse").innerHTML = "Total Lunar Eclipse";
+          }
+          else{
+            document.getElementById("mayeclipse").innerHTML = '<img src="./images/eclipse.png" width="60px" height="60px">';
+
+          }
+          }
+
+function NewMoon9(){
+        document.getElementById("junemoon").value="New Moon";
+          if (document.getElementById("junemoon").innerHTML !== "New Moon"){
+           document.getElementById("junemoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("junemoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function solec(){
+        document.getElementById("junesolec").value="Annular Solar Eclipse";
+          if (document.getElementById("junesolec").innerHTML !== "Annular Solar Eclipse"){
+           document.getElementById("junesolec").innerHTML = "Annular Solar Eclipse";
+          }
+          else{
+            document.getElementById("junesolec").innerHTML = '<img src="./images/solec.png" width="60px" height="60px">';
+
+          }
+          }
+function sols(){
+        document.getElementById("Junesolst").value="June Solstice	";
+          if (document.getElementById("Junesolst").innerHTML !== "June Solstice	"){
+           document.getElementById("Junesolst").innerHTML = "June Solstice	";
+          }
+          else{
+            document.getElementById("Junesolst").innerHTML = '<img src="./images/solstice.png" width="60px" height="60px">';
+
+          }
+          }
+function Venus2(){
+        document.getElementById("JuneVenus").value="Quadrantids Meteor Shower";
+          if (document.getElementById("JuneVenus").innerHTML !== "Venus at Greatest Western Elongation"){
+           document.getElementById("JuneVenus").innerHTML = "Venus at Greatest Western Elongation";
+          }
+          else{
+            document.getElementById("JuneVenus").innerHTML = '<img src="./images/venus.png" width="60px" height="60px">';
+
+          }
+          }
+
+function FmSm3(){
+        document.getElementById("JuneFmSm").value="Full Moon, Supermoon";
+          if (document.getElementById("JuneFmSm").innerHTML !== "Full Moon, Supermoon"){
+           document.getElementById("JuneFmSm").innerHTML = "Full Moon, Supermoon";
+          }
+          else{
+            document.getElementById("JuneFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+
+function Mercury4(){
+        document.getElementById("JulyMercury").value="Mercury at Greatest Western Elongation	";
+          if (document.getElementById("JulyMercury").innerHTML !== "Mercury at Greatest Western Elongation	"){
+           document.getElementById("JulyMercury").innerHTML = "Mercury at Greatest Western Elongation	";
+          }
+          else{
+            document.getElementById("JulyMercury").innerHTML = '<img src="./images/mercury.png" width="60px" height="60px">';
+
+          }
+          }
+
+function NewMoon10(){
+        document.getElementById("Julymoon").value="New Moon";
+          if (document.getElementById("Julymoon").innerHTML !== "New Moon"){
+           document.getElementById("Julymoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("Julymoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function FmSm4(){
+        document.getElementById("JulyFmSm").value="Full Moon";
+          if (document.getElementById("JulyFmSm").innerHTML !== "Full Moon"){
+           document.getElementById("JulyFmSm").innerHTML = "Full Moon";
+          }
+          else{
+            document.getElementById("JulyFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+
+function JulySS(){
+        document.getElementById("JulySS").value="Delta Aquarids Meteor Shower";
+          if (document.getElementById("JulySS").innerHTML !== "Delta Aquarids Meteor Shower"){
+           document.getElementById("JulySS").innerHTML = "Delta Aquarids Meteor Shower";
+          }
+          else{
+            document.getElementById("JulySS").innerHTML = '<img src="./images/SS.png" width="50px" height="50px">';
+
+          }
+          }
+
+function saturn(){
+        document.getElementById("AugSat").value="Saturn at Opposition	";
+          if (document.getElementById("AugSat").innerHTML !== "Saturn at Opposition	"){
+           document.getElementById("AugSat").innerHTML = "Saturn at Opposition	";
+          }
+          else{
+            document.getElementById("AugSat").innerHTML = '<img src="./images/saturn.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon11(){
+        document.getElementById("augmoon").value="New Moon";
+          if (document.getElementById("augmoon").innerHTML !== "New Moon"){
+           document.getElementById("augmoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("augmoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+function SHS(){
+        document.getElementById("augustss").value="Perseids Meteor Shower";
+          if (document.getElementById("augustss").innerHTML !== "Perseids Meteor Shower"){
+           document.getElementById("augustss").innerHTML = "Perseids Meteor Shower";
+          }
+          else{
+            document.getElementById("augustss").innerHTML = '<img src="./images/SHS.png" width="50px" height="50px">';
+
+          }
+          }
+
+function jupiter(){
+        document.getElementById("augjupiter").value="Jupiter at Opposition	";
+          if (document.getElementById("augjupiter").innerHTML !== "Jupiter at Opposition	"){
+           document.getElementById("augjupiter").innerHTML = "Jupiter at Opposition	";
+          }
+          else{
+            document.getElementById("augjupiter").innerHTML = '<img src="./images/jupiter.png" width="50px" height="50px">';
+
+          }
+          }
+
+
+function NewMoon12(){
+        document.getElementById("augmoon2").value="New Moon";
+          if (document.getElementById("augmoon2").innerHTML !== "New Moon"){
+           document.getElementById("augmoon2").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("augmoon2").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function bluemoon(){
+        document.getElementById("augbluemoon").value="New Moon";
+          if (document.getElementById("augbluemoon").innerHTML !== "New Moon"){
+           document.getElementById("augbluemoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("augbluemoon").innerHTML = '<img src="./images/bluemoon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon13(){
+        document.getElementById("septembermoon").value="New Moon";
+          if (document.getElementById("septembermoon").innerHTML !== "New Moon"){
+           document.getElementById("septembermoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("septembermoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function neptune(){
+        document.getElementById("septnept").value="Neptune at Opposition";
+          if (document.getElementById("septnept").innerHTML !== "Neptune at Opposition"){
+           document.getElementById("septnept").innerHTML = "Neptune at Opposition";
+          }
+          else{
+            document.getElementById("septnept").innerHTML = '<img src="./images/neptune.png" width="50px" height="50px">';
+
+          }
+          }
+
+function Mercury5(){
+        document.getElementById("septmercury").value="Mercury at Greatest Eastern Elongation";
+          if (document.getElementById("septmercury").innerHTML !== "Mercury at Greatest Eastern Elongation	"){
+           document.getElementById("septmercury").innerHTML = "Mercury at Greatest Eastern Elongation	";
+          }
+          else{
+            document.getElementById("septmercury").innerHTML = '<img src="./images/merc.png" width="60px" height="60px">';
+
+          }
+          }
+
+function FmSm5(){
+        document.getElementById("septFmSm").value="Full Moon";
+          if (document.getElementById("septFmSm").innerHTML !== "Full Moon"){
+           document.getElementById("septFmSm").innerHTML = "Full Moon";
+          }
+          else{
+            document.getElementById("septFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+
+function FmSm6(){
+        document.getElementById("octFmSm").value="Full Moon";
+          if (document.getElementById("octFmSm").innerHTML !== "Full Moon"){
+           document.getElementById("octFmSm").innerHTML = "Full Moon";
+          }
+          else{
+            document.getElementById("octFmSm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+
+function septeq(){
+        document.getElementById("septeq").value="Quadrantids Meteor Shower";
+          if (document.getElementById("septeq").innerHTML !== "september Equinox"){
+           document.getElementById("septeq").innerHTML = "september Equinox";
+          }
+          else{
+            document.getElementById("septeq").innerHTML = '<img src="./images/Mareq.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NewMoon14(){
+        document.getElementById("octmoon").value="New Moon";
+          if (document.getElementById("octmoon").innerHTML !== "New Moon"){
+           document.getElementById("octmoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("octmoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function SSOC(){
+        document.getElementById("octss").value="Draconids Meteor Shower	";
+          if (document.getElementById("octss").innerHTML !== "Draconids Meteor Shower	"){
+           document.getElementById("octss").innerHTML = "Draconids Meteor Shower	";
+          }
+          else{
+            document.getElementById("octss").innerHTML = '<img src="./images/SSOC.png" width="50px" height="50px">';
+
+          }
+          }
+  
+function SSOCT(){
+        document.getElementById("octss2").value="Orionids Meteor Shower		";
+          if (document.getElementById("octss2").innerHTML !== "Orionids Meteor Shower		"){
+           document.getElementById("octss2").innerHTML = "Orionids Meteor Shower		";
+          }
+          else{
+            document.getElementById("octss2").innerHTML = '<img src="./images/SSOCT.png" width="50px" height="50px">';
+
+          }
+          }
+
+function Mercury6(){
+        document.getElementById("octmerc").value="Mercury at Greatest Western Elongation	";
+          if (document.getElementById("octmerc").innerHTML !== "Mercury at Greatest Western Elongation	"){
+           document.getElementById("octmerc").innerHTML = "Mercury at Greatest Western Elongation	";
+          }
+          else{
+            document.getElementById("octmerc").innerHTML = '<img src="./images/mercury.png" width="60px" height="60px">';
+
+          }
+          }
+
+function Venus3(){
+        document.getElementById("octvenus").value="Venus at Greatest Eastern Elongation	";
+          if (document.getElementById("octvenus").innerHTML !== "Venus at Greatest Eastern Elongation	"){
+           document.getElementById("octvenus").innerHTML = "Venus at Greatest Eastern Elongation	";
+          }
+          else{
+            document.getElementById("octvenus").innerHTML = '<img src="./images/venus (1).png" width="60px" height="60px">';
+
+          }
+          }
+function NewMoon15(){
+        document.getElementById("novmoon").value="New Moon";
+          if (document.getElementById("novmoon").innerHTML !== "New Moon"){
+           document.getElementById("novmoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("novmoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+
+function SSNOV(){
+        document.getElementById("novss").value="Taurids Meteor Shower		";
+          if (document.getElementById("novss").innerHTML !== "Taurids Meteor Shower		"){
+           document.getElementById("novss").innerHTML = "Taurids Meteor Shower		";
+          }
+          else{
+            document.getElementById("novss").innerHTML = '<img src="./images/shooting-star (5).png" width="50px" height="50px">';
+
+          }
+          }
+
+
+
+function uranus(){
+        document.getElementById("novura").value="Uranus at Opposition			";
+          if (document.getElementById("novura").innerHTML !== "Uranus at Opposition			"){
+           document.getElementById("novura").innerHTML = "Uranus at Opposition			";
+          }
+          else{
+            document.getElementById("novura").innerHTML = '<img src="./images/uranus.png" width="50px" height="50px">';
+
+          }
+          }
+
+function NOVSS2(){
+        document.getElementById("novss2").value="Leonids Meteor Shower				";
+          if (document.getElementById("novss2").innerHTML !== "Leonids Meteor Shower				"){
+           document.getElementById("novss2").innerHTML = "Leonids Meteor Shower				";
+          }
+          else{
+            document.getElementById("novss2").innerHTML = '<img src="./images/shooting-star (6).png" width="50px" height="50px">';
+
+          }
+          }
+function FmSm7(){
+        document.getElementById("novfm").value="Full Moon";
+          if (document.getElementById("novfm").innerHTML !== "Full Moon"){
+           document.getElementById("novfm").innerHTML = "Full Moon";
+          }
+          else{
+            document.getElementById("novfm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+function lunec(){
+        document.getElementById("novlunec").value="Partial Lunar Eclipse	";
+          if (document.getElementById("novlunec").innerHTML !== "Partial Lunar Eclipse	"){
+           document.getElementById("novlunec").innerHTML = "Partial Lunar Eclipse	";
+          }
+          else{
+            document.getElementById("novlunec").innerHTML = '<img src="./images/lunec.png" width="60px" height="60px">';
+
+          }
+          }
+
+function NewMoon16(){
+        document.getElementById("decnewmoon").value="New Moon";
+          if (document.getElementById("decnewmoon").innerHTML !== "New Moon"){
+           document.getElementById("decnewmoon").innerHTML = "New Moon";
+          }
+          else{
+            document.getElementById("decnewmoon").innerHTML = '<img src="./images/new-moon.png" width="50px" height="50px">';
+
+          }
+          }
+
+function tosolec(){
+        document.getElementById("decsolec").value="Total Solar Eclipse";
+          if (document.getElementById("decsolec").innerHTML !== "Total Solar Eclipse"){
+           document.getElementById("decsolec").innerHTML = "Total Solar Eclipse";
+          }
+          else{
+            document.getElementById("decsolec").innerHTML = '<img src="./images/tosolec.png" width="50px" height="50px">';
+
+          }
+          }
+    
+function DECSS(){
+        document.getElementById("decss").value="Geminids Meteor Shower";
+          if (document.getElementById("decss").innerHTML !== "Geminids Meteor Shower"){
+           document.getElementById("decss").innerHTML = "Geminids Meteor Shower";
+          }
+          else{
+            document.getElementById("decss").innerHTML = '<img src="./images/shooting-star (8).png" width="50px" height="50px">';
+
+          }
+          }
+
+function FmSm8(){
+        document.getElementById("decfm").value="Full Moon";
+          if (document.getElementById("decfm").innerHTML !== "Full Moon"){
+           document.getElementById("decfm").innerHTML = "Full Moon";
+          }
+          else{
+            document.getElementById("decfm").innerHTML = '<img src="./images/full-moon.png" width="60px" height="60px">';
+
+          }
+          }
+
+function decsolss(){
+        document.getElementById("decsols").value="December Solstice";
+          if (document.getElementById("decsols").innerHTML !== "December Solstice"){
+           document.getElementById("decsols").innerHTML = "December Solstice";
+          }
+          else{
+            document.getElementById("decsols").innerHTML = '<img src="./images/decsol.png" width="60px" height="60px">';
+
+          }
+          }
+
+function DECSS2(){
+        document.getElementById("decss2").value="Ursids Meteor Shower";
+          if (document.getElementById("decss2").innerHTML !== "Ursids Meteor Shower"){
+           document.getElementById("decss2").innerHTML = "Ursids Meteor Shower";
+          }
+          else{
+            document.getElementById("decss2").innerHTML = '<img src="./images/shooting-star (9).png" width="50px" height="50px">';
+
+          }
+          }
+</script>
+</body> 
+  <footer class="site-footer">
+	<div >
+	  <div >
+		<div >
+		  <h6>About</h6>
+		  <p class="text-justify">TheWondersOfSpace.com <i>Discve all about space  </i> is a website developped by the first year computer science and engineering student Dhiaa Mejdi, using HTML5, CSS3 and Javascript. This websites aims to not only entertain people but also to educate people and let them into the wonderful world of space and astronomy.</p>
+		</div>
+
+		
+	
+
+		<div >
+		  <ul class="social-icons">
+			<li><a class="facebook" href="https://www.facebook.com/dhiaa.mejdi1/"><img src="./images/facebook (2).png" height=40px width=40px;></a></li>
+			<li><a class="twitter" href="https://twitter.com/dhiaamejdi"><img src="./images/twitter.png" height=40px width=40px;></a></li>
+			<li><a class="instagram" href="https://www.instagram.com/dhiaa.dean090/"><img src="./images/instagram (1).png" height=40px width=40px;></a></li>
+			<li><a class="linkedin" href="https://www.linkedin.com/in/dhiaa-mejdi-9b796016a/"><img src="./images/linkedin.png" height=40px width=40px;></a></li>   
+		  </ul>
+		</div>
+	  </div>
+	</div>
+</footer>
+</html> 

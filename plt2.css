@@ -1,0 +1,244 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	background-image: url('./images/plt.jpg');  
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/BG.jpg");
+	
+	background-size: cover ; 
+	background-position: center  ; 
+}
+
+
+.main {
+	max-width: 1200px; 
+	margin: auto ; 
+}
+
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+	position: absolute; /* Position them relative to the browser window */
+	top: -35px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 150px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: black; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+	top: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #Home {
+	left: 200px;
+	background-color :#FFF5EE		;
+  }
+  
+  #SpaceGame {
+	left: 350px;
+	background-color: #F8F8FF; /* Blue */
+  }
+  
+  #SpaceTrip {
+	left: 500px;
+	background-color:#F0FFFF; /* Red */
+  }
+  
+  #AstroCalendar {
+	left: 650px;
+	background-color: #F0FFFF; /* Light Black */
+  }
+
+  #PlanetsWiki {
+	left: 800px;
+	background-color:#F8F8FF; /* Light Black */
+  }
+
+  #Quiz {
+	left: 950px;
+	background-color:#FFF5EE	 /* Light Black */
+  }
+  
+  
+  .slideright {
+	width: 500px;
+	height: 300px;
+	background: none;
+	position: relative;
+	animation-name: example;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+	
+  }
+  
+  @keyframes example {
+	from {left: -50%;top:30% ;}
+	to {left: 0%;top:30%; background-color: none;}
+  }
+
+  .sliderleft {
+	width: 500px;
+	height: 300px;
+	background: none;
+	position: relative;
+	animation-name: example1;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+	
+  }
+  
+  
+  @keyframes example1 {
+	from {left: 80%;top:40% ;}
+	to {left: 30%;top:40%; background-color:None;}
+	
+  }
+ 
+  .iconDetails {
+	margin-left:2%;
+   float:left; 
+   height:400px;
+   width:600px; 
+   padding: 15px;
+   } 
+   
+   .container2 {
+	   width:200px;
+	   height:auto;
+	   padding:1%;
+	   float:left;
+	   
+
+   }
+   h4{margin:0}
+   .left {float:left;width:500px;}
+   .right {float:left;margin:0 0 0 5px;width:300px;}
+   
+   /* Add some content at the bottom of the video/page */
+.content {
+	position: absolute;
+	top: -350%;
+	background: rgb(255, 255, 255,0.5);
+	color: black;
+	width: 580px;
+	height: 4300px;
+	padding: 20px;
+	bottom: 50%;
+  }
+  
+  .planetsdescription{
+	font-size: 150%;
+}
+
+  /* Side bar for each planet  */
+
+/* Style the links inside the sidenav */
+#mySidenav2 a {
+  position: absolute; /* Position them relative to the browser window */
+  left: 1300px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 300px; /* Set a specific width */
+  height: 50px;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+  
+}
+
+#mySidenav2 a:hover {
+  left: 1150; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#earthbtn {
+  top: 40%;
+  background-color: #4CAF50;
+}
+
+#marsbtn {
+  top: 111%;
+  background-color: #8B4513; /* Blue */
+}
+
+#mercurybtn {
+  top: 182%;
+  background-color: grey; /* Red */
+}
+
+
+#venusbtn {
+	top:  253%;
+	background-color: #BC8F8F	 /* Light Black */
+}
+
+#jupiterbtn {
+	top: 325%;
+	background-color: #5B79B5 /* Light Black */
+}
+
+#saturnbtn {
+	top: 397%;
+	background-color: #DEB74C /* Light Black */
+}
+
+#uranusbtn {
+	top: 463%;
+	background-color: #5B79B5 /* Light Black */
+}
+
+#neptunebtn {
+	top: 535%;
+	background-color: #2F56D7 /* Light Black */
+}
+
+#sunbtn {
+	top: 607%;
+	background-color: yellow /* Light Black */
+  }
+  
+#moonbtn {
+	top: 678%;
+	background-color: #686868	 /* Light Black */
+  }
+
+.planetsFacts {
+	position: absolute;
+	background: rgb(255, 255, 255,0.5);
+	color: black;
+	width: 1200px;
+	height: 8300px;
+	padding: 20px;
+	left: 2.5%;
+	text-align: center;
+	top: 750%;  }
+
+	#myBtn {
+		display: none; /* Hidden by default */
+		position: fixed; /* Fixed/sticky position */
+		bottom: 20px; /* Place the button at the bottom of the page */
+		right: 30px; /* Place the button 30px from the right */
+		z-index: 99; /* Make sure it does not overlap */
+		border: none; /* Remove borders */
+		outline: none; /* Remove outline */
+		background-color: black; /* Set a background color */
+		color: white; /* Text color */
+		cursor: pointer; /* Add a mouse pointer on hover */
+		padding: 15px; /* Some padding */
+		border-radius: 10px; /* Rounded corners */
+		font-size: 18px; /* Increase font size */
+	  }
+	  
+	  #myBtn:hover {
+		background-color: #555; /* Add a dark-grey background on hover */
+	  }

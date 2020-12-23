@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="space trip.css"/>
+<TITLE> Space Trip </TITLE>
+<link rel="icon" href="./images/SP.png" type="image/.jpg">
+
+</HEAD>
+<BODY>
+<div class="menu_bar">
+	<div id="mySidenav" class="sidenav">
+		<a href="Space P1.html" id="Home">Home</a>
+		<a href="Space Game.html" id="SpaceGame">Space Game</a>
+		<a href="space trip.html" id="SpaceTrip">Space Trip</a>
+		<a href="schedule.html" id="AstroCalendar">Astro Calendar</a>
+		<a href="planets.html" id="PlanetsWiki">Planets Wiki</a>   
+		<a href="quiz.html" id="Quiz">Quiz</a>              
+   
+</div>
+	</div>			
+
+
+<br> 
+</br>
+<br>
+</br>
+<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="./images/unnamed.png" alt="IMG">
+			</div>
+
+<FORM action="mailto:deancold3@gmail.com" method="post" name="SpaceTrip"  onsubmit="return validateForm()">
+<TABLE >
+<TR>
+<TD> Civility:</TD>
+<TD> Mr <input name="gender" value="Mr" type="radio">&nbsp;
+	Mrs <input name="gender" value="Mme" type="radio">&nbsp;
+</TR>
+
+
+
+<TR>
+<TD> <label for="">name :</label> </TD>
+<TD> <input name="name" type="text">
+</TD>
+</TR>
+
+<TR>
+<TD> Family Name *:</TD>
+<TD> <input name="FName" type="text"></TD>
+</TR>
+
+<TR>
+<TD> Date of Birth *:</TD>
+<TD> <select name="day"> 
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+            </select> 
+ <select name="month">
+  <option>January</option>
+ <option>February</option>
+ <option>March</option>
+ <option>April</option>
+ <option>May</option>
+ <option>June</option>
+ <option>July</option>
+ <option>august</option>
+ <option>September</option>
+ <option>October</option>
+ <option>November</option>
+ <option>December</option>
+	</select>  
+<label for="">Year :</label> <input name="year" type="text"size="8"> 
+</TD>
+</TR>
+<TR>
+<TD> Adress *:
+</TD>
+<TD> House Number <br> <input name="HNum" type="text" size="8"> </td> </tr>
+<tr> <td> </td> <td> Street <br> <input name="Street" type="text" size="25"> <br> Postal Code <br> <input name="PostalCode" type="text" size="8"> <br> City <br> <input name="City" type="text">
+</TD>
+</TR>
+<TR>
+<TD> Phone Number *:</TD>
+
+<TD> <input name="PhoneNum" type="text" size="8"></TD>
+</TR>
+<TR>
+
+<FORM>
+<TD> space stations and spacecrafts you wish to visit:
+<TD>  Mars Express<input name="Place" value="Mars" type="radio">&nbsp;
+	 Artemis 1 <input name="Place" value="Artemis" type="radio">&nbsp;
+	 International Space Station <input name="Place" value="ISStation" type="radio">&nbsp;
+	 Soyuz spacecraft <input name="Place" value="Soyuz spacecraft" type="radio">&nbsp;
+	 
+</TR>
+<TR>
+ <TD> E-mail *:</TD>
+<TD> <input name="email" type="text" size="8"></TD>
+</TR>
+</TABLE>
+<INPUT type="submit" value="Réserver">
+
+
+</FORM>
+		<div style="color: black;font-size: larger;">
+			Nasa Location
+		</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198741.2754485602!2d-77.1546602349135!3d38.89351276365628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2stn!4v1607296654828!5m2!1sen!2stn" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+</div>
+
+<script>
+function validateForm() {
+  var x = document.forms["SpaceTrip"]["gender"].value;
+  var y = document.forms["SpaceTrip"]["name"].value;
+  var z = document.forms["SpaceTrip"]["day"].value;
+  var a = document.forms["SpaceTrip"]["month"].value;
+  var b = document.forms["SpaceTrip"]["year"].value;
+  var c = document.forms["SpaceTrip"]["HNum"].value;
+  var d = document.forms["SpaceTrip"]["PhoneNum"].value;
+  var e = document.forms["SpaceTrip"]["email"].value;
+
+  if (x == "") {
+    alert("Gender must be filled out");
+    return false;
+  }
+  if (y == "") {
+    alert("name must be filled out");
+    document.forms["SpaceTrip"]["name"].style.backgroundColor = "red";
+
+    return false;
+  }
+  if (z == "") {
+    alert("Day of birth must be filled out");
+    return false;
+  }
+  if (a == "") {
+    alert("Month of birth must be filled out");
+    return false;
+  }
+  if (b == "") {
+    alert("Year of birth must be filled out");
+    return false;
+  }
+  if (c == "") {
+    alert("House Number must be filled out");
+    return false;
+    document.forms["SpaceTrip"]["HNum"].style.backgroundColor = "red";
+
+  }
+  if (d == "") {
+    alert("Phone Number must be filled out");
+    return false;
+    document.forms["SpaceTrip"]["PhoneNum"].style.backgroundColor = "red";
+
+  }
+  if (e == "") {
+    alert("Please Fill you Email so we can contact you");
+    return false;
+    document.forms["SpaceTrip"]["email"].style.backgroundColor = "red";
+
+  }
+
+}
+
+
+</script>
+</BODY>
+
+
+
+
+<footer class="site-footer">
+	<div >
+	  <div >
+		<div >
+		  <h6>About</h6>
+		  <p class="text-justify">TheWondersOfSpace.com <i>Discve all about space  </i> is a website developped by the first year computer science and engineering student Dhiaa Mejdi, using HTML5, CSS3 and Javascript. This websites aims to not only entertain people but also to educate people and let them into the wonderful world of space and astronomy</p>
+		</div>
+
+		
+	
+
+		<div >
+			<ul class="social-icons">
+			  <li><a class="facebook" href="https://www.facebook.com/dhiaa.mejdi1/"><img src="./images/facebook (2).png" height=60px width=60px; style="position: relative;bottom:19.5px;right: 90.5%;"></a></li>
+			  <li><a class="twitter" href="https://twitter.com/dhiaamejdi"><img src="./images/twitter.png" height=60px width=60px style="position: relative;bottom:19.5px;right: 90.5%;"></a></li>
+			  <li><a class="instagram" href="https://www.instagram.com/dhiaa.dean090/"><img src="./images/instagram (1).png" height=60px width=60px style="position: relative;bottom:19.5px;right: 90.5%;"></a></li>
+			  <li><a class="linkedin" href="https://www.linkedin.com/in/dhiaa-mejdi-9b796016a/"><img src="./images/linkedin.png" height=60px width=60px style="position: relative;bottom:19.5px;right: 90.5%;"></a></li>   
+			</ul>
+		  </div>
+	  </div>
+	</div>
+</footer>
+</HTML>
